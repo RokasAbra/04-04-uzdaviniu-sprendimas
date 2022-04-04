@@ -35,7 +35,7 @@ function kokieMetai(keliamieji, neKeliamieji) {
     console.log(kokieMetai());
     
 //4.Parašyti funkciją, kuri priimtų vieną skaičių. Grąžinti skaičiaus kvadratą.
-console.log('----------------');
+console.log('--------4--------');
 let pirmas = 8;
 const kvadratu = (pirmas) => pirmas * pirmas;
 const rezultatas1 = kvadratu(pirmas);
@@ -71,3 +71,7 @@ function skaiciuSuma(sk) {
      }
      
  }console.log(sveikuSkaiciu());
+
+ console.log('-------------');
+
+ 
