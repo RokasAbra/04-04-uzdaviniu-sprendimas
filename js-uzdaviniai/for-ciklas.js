@@ -79,8 +79,8 @@ for (let i = 0; i < 20; i++) {
 //7.Parašykite programą, kuri atspausdintų įvesto skaičiaus daugybos lentelę nuo 1 iki 10.
 console.log('----------7----------');
 let ivestasSkaicius = 3
-let nr = 0;
-for (let i = 0; i <= 10; i++) {
+let nr = 1;
+for (let i = 1; i <= 10; i++) {
     console.log(ivestasSkaicius, 'x', i, '=', i * ivestasSkaicius  );
     
 }
@@ -89,9 +89,10 @@ for (let i = 0; i <= 10; i++) {
 console.log('---------8----------');
 let colis = 2.54;
 let cm = 0;
-for (let i = 0; i < 20; i++) {
-    const cm = [i] * colis;
-    console.log(`Pateiktas skaicius: ${i} cm = ${cm} coliu `);
+for (let i = 1; i < 20; i++) {
+    const cm = (i / colis) ;
+   
+    console.log(`Pateiktas skaicius: ${i} cm = ${cm.toFixed(3)} coliu `);
     
 }
 
@@ -105,7 +106,7 @@ let indelis = 100;
 for (let i = 2010; i <= 2022; i++) {
     const palūkanos = (Math.round(indelis * palūkanuNorma)) / 100;
     indelis += palūkanos;
-    console.log(` ${i} metais indelis bus ${indelis.toFixed(1)}, o palukanos bus ${palūkanos}.`);
+    console.log(` ${i} metais indelis bus: ${indelis.toFixed(1)}, o palukanos bus: ${palūkanos}`);
 }
 
 /*10.Keliamieji metai turi 366 dienas, paprastieji–365. Visi metai, išskyrus 
@@ -115,17 +116,15 @@ paprastieji. Raskite visus mūsų eros keliamuosius metus.*/
 
  console.log('----10---------');
 
- const met = 0;
+ const met = 2000;
   
-     for (let i = 0; i <= 2022; i++) {
-         if ((i % 4 === 0 || i % 400 === 0)) {
+     for (let i = 1700; i <= 2022; i++) {
+         if ((i % 4 === 0 && i % 100 !== 0) || i % 400 === 0) {
              console.log(`Metai ${i} yra keliamieji`);
-         } else if ((i % 4 !=  0 || i % 400 != 0)) {
-             console.log(`Metai ${i} yra ne keliamieji`);
-         }
-            
          
-        }      
+         }     
+         
+ }     
      
      
  
