@@ -115,14 +115,14 @@ paprastieji. Raskite visus mūsų eros keliamuosius metus.*/
 
  console.log('----10---------');
 
- 
+ const met = 0;
   
      for (let i = 0; i <= 2022; i++) {
          if ((i % 4 === 0 || i % 400 === 0)) {
              console.log(`Metai ${i} yra keliamieji`);
-         }// else if ((i % 4 !=  0 || i % 400 != 0)) {
-           //  console.log(`Metai ${i} yra ne keliamieji`);
-         //}
+         } else if ((i % 4 !=  0 || i % 400 != 0)) {
+             console.log(`Metai ${i} yra ne keliamieji`);
+         }
             
          
         }      
