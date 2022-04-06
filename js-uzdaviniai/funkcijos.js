@@ -68,23 +68,26 @@ console.log(`Skaiciu suma: ${numSum(3)}`);
  //6.Parašykite funkciją, kuri priimtų skaičių ir suskaičiuotų, iš kiek sveikų skaičių jos argumentas
  // dalijasi be liekanos (išskyrus vienetą ir patį save).
  console.log('--------6--------');
-
- function sveikuSkaiciu(num) {
-     if (typeof num !== 'number'
-     || !isFinite(num)) {
-        return 'ERROR===> Not a number'
-     }
-
-     if (num ) {
-         
-     }
- 
-}console.log(sveikuSkaiciu(true));
-
  console.log('-------------');
 
+ function sveikiSk(skaicius) {
+     if (typeof skaicius !== 'number'
+     || !isFinite(skaicius) ) {
+         return `ERROR` }
+         let dalmuo = 0;
+         for (let i = 2; i < skaicius; i++) {
+             if (skaicius % i === 0) {
+                 dalmuo++;
+             }  
+         }return `skaiciaus dalijasi is: ${dalmuo} sveiku`;
+     }
+      
+ console.log(sveikiSk(6));
+ console.log(sveikiSk(true));
+ console.log(sveikiSk(3.14));
 
-  function findProperDivisor(num) {
+
+ /* function findProperDivisor(num) {
     if(num<0) return
       let sum = 0;
       for (let i = 0; i < Math.floor(num / 2); i++) {
@@ -94,7 +97,7 @@ console.log(`Skaiciu suma: ${numSum(3)}`);
         }
       }
       return sum
-    }console.log(findProperDivisor(18));
+    }console.log(findProperDivisor(18));*/
 
     //7.Parašyti funkciją, kuri priimtų vieną kintamąjį-tekstą. 
     //Funkcija turi išvesti tekstą į ekraną ir dar papildomai parodyti jo 
@@ -154,34 +157,21 @@ function duKintamieji(pirmas, antras) {
     }
 }
 
-console.log(duKintamieji('pirmasa', 'antras'));
+console.log(duKintamieji('pirmasis', 'antras'));
 
 //10.Parašyti funkciją, kuri priimtų vieną kintamąjį-tekstą.Suskaičiuoti, kiek tekste yra ‚a‘ raidžių.
 console.log('////////////////10\\\\\\\\\\\\\\\\\\\\\\\\\\');
 
-function kintamasisA(text) {
-    if (typeof text !== 'string') {
-        return 'ERROR===> Wrong type'
-    }
-    
-   for (let i = 0; i < text.length; i++) {
-       let count = 0;
-           if (text[i] == 'a') {
-               count++;
-           }return 
-         {
-               
-           console.log(`${text[i]} occurs ${count} times`);
-           
-       }
-           
-       }return text
-       
+function kintamasisA(tekstas){
+    let raidziuSuma = 0;
+    for (let i = 0; i <= tekstas.length; i++) {
+        if (tekstas[i] === 'a') {
+            raidziuSuma++ ;
+        }    
+    }return `Tekste yra: ${raidziuSuma} `
 }
-
-console.log(kintamasisA('assada'), `a tekste,`);
-
-
-
+    
+console.log(kintamasisA('ar tu matei kas cia'), '= Pasirinktos raides a');
+console.log(kintamasisA('ar as tai zinau ar vakar'), '= Pasirinktos raides a');
 //if(obj[str[i]]){ obj[str[i]] += 1; }
 
