@@ -21,7 +21,7 @@ while ( sumaWhile % 7 === 0  ) {
      
      sumaWhile += b
     console.log(b);
-    b+= Math.floor(Math.random() * 100) + 1  ;
+    b+= Math.floor(Math.random() * 10) + 1  ;
     
       
 }
@@ -43,21 +43,49 @@ while ( sumaWhile % 7 === 0  ) {
 // knygos skyriai : 17
 // Tadas vidutiniskai per diena perskaite 2.83 skyrius
 console.log('================3============');
-let m = 8; //skyriai
-let d = 0; //dienos
-let s = 0; // vidutiniskai kiek perskaito
-let skyriaiPerDiena = 0;
-while (d <= m) {
-   
-    skyriaiPerDiena = m / s;
-    console.log(`${d}, ${skyriaiPerDiena}, ${s}`);
-    d++ ;
-    d = d + 1;  
+ // m = skyriai 
+ // d = dienos
+ // s = vidutiniskai kiek perskaito
+ // kiek per diena
+let m = 8;
+let d = 0; ///Day1= 1s day2= 2, day3= 3 day=...
+let s=  0;
+let skyriai = 0;
+let perskaityta = 0;
+let perdiena = 0;
+while (perskaityta !== 8 && d <= m) {
+    
+    d++;
+     perskaityta = d += 1;
+     console.log(`perskaytita:${perskaityta} dienos:, ${d}, perdiena, ${perdiena}  ${skyriai}`);
     
     
 }
+console.log('-----------3-----------');
 
 
+/*
+  4.Naudojant ciklą atspausdinti skirtingus atsitiktinius skaičius nuo 0 iki 10 
+  (vienas skaičius vienoje eilutėje). Paskutinis atspausdintas skaičius turi būti 5.
+*/
+let number = 0;
+while (number !==5) {
+    number= Math.floor(Math.random() * 10) + 1;
+    console.log(number);
+     
+}
 
+/*
+5.naudojant ciklą atspausdinti skirtingus atsitiktinius skaičius nuo 0 iki 10 
+(vienas skaičius vienoje eilutėje). 
+Paskutinis atspausdintas skaičius turi būti 5 arba 7; Suskaičiuoti kiek ciklų prasisuko.
+*/
 
-
+let x = 0;
+let y = 0;
+while (x !== 5 && x !== 7) {
+    x = Math.floor(Math.random() * 10) + 1;
+    y++;
+    console.log(`${x}, ${y}`);
+    
+}console.log(`Ciklu prasisuko : ${y} `);
