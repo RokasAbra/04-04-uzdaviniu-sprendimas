@@ -43,26 +43,18 @@ while ( sumaWhile % 7 === 0  ) {
 // knygos skyriai : 17
 // Tadas vidutiniskai per diena perskaite 2.83 skyrius
 console.log('================3============');
- // m = skyriai 
- // d = dienos
- // s = vidutiniskai kiek perskaito
- // kiek per diena
-let m = 8;
-let d = 0; ///Day1= 1s day2= 2, day3= 3 day=...
-let s=  0;
-let skyriai = 0;
-let perskaityta = 0;
-let perdiena = 0;
-while (perskaityta !== 8 && d <= m) {
-    
-    d++;
-     perskaityta = d += 1;
-     console.log(`perskaytita:${perskaityta} dienos:, ${d}, perdiena, ${perdiena}  ${skyriai}`);
-    
-    
-}
-console.log('-----------3-----------');
 
+
+let m = 8;
+let d = 0;
+let s = 0;
+ while (s <= m) {
+     d++ ;
+     s += d;
+     console.log(s, d);
+ }
+let vidurkis = m / d;
+console.log(`Tadas vidutiniskai per diena perskaite: ${vidurkis} skyrius ir knyga perskaite per: ${d} dienas`);
 
 /*
   4.Naudojant ciklą atspausdinti skirtingus atsitiktinius skaičius nuo 0 iki 10 
@@ -89,3 +81,4 @@ while (x !== 5 && x !== 7) {
     console.log(`${x}, ${y}`);
     
 }console.log(`Ciklu prasisuko : ${y} `);
+
