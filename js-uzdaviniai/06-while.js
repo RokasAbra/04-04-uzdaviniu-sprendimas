@@ -57,7 +57,7 @@ Paskutinis atspausdintas skaičius turi būti 5 arba 7; Suskaičiuoti kiek cikl�
 
 let x = 0;
 let y = 0;
-while (!(x === 5 && x === 7)) {
+while (x !== 5 && x !== 7) {
   x = Math.floor(Math.random() * 11);
   y++;
 }
