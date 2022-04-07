@@ -9,19 +9,19 @@ console.log(rezultatas);
 //2.Parašyti funkciją, kuri priima du kintamuosius.Palygina tuos du skaičius
 // ir grąžina rezultatą ar pirmas skaičius yra didesnis, ar antras, ar jie yra lygūs
 console.log('--------2----------');
-function palyginimas(didesnis, lygus) {
+function palyginimas(a, b) {
     if (a > b) {
         return `Pirmas skaiciu yra didesnis`
     }if (a < b) {
         return `Antras skacius yra didesnis`
 
         
-    }if (a = b) {
+    }if (a <= b) {
         return `Jie abu yra lygus`
     }
         
     }
- console.log(palyginimas(a, b));
+ console.log(palyginimas(9, 10));
 
  //3.Parašyti funkciją, kuri priimtų vieną skaičių. Turi būti grąžinamas rezultatas ar tie metai yra keliemieji.
 console.log('--------3--------');
@@ -152,12 +152,12 @@ function duKintamieji(pirmas, antras) {
     if (antras.length > pirmas.length) {
         return `Antras zodis yra is: ${antras.length} raidziu ir didesnis uz pirma kurio dydis: ${pirmas.length}`
     }
-    if (pirmas.length >= antras.length) {
+    if (pirmas.length <= antras.length) {
         return `Jie abu yra lygus`
     }
 }
 
-console.log(duKintamieji('pirmasis', 'antras'));
+console.log(duKintamieji('pirmas', 'antras'));
 
 //10.Parašyti funkciją, kuri priimtų vieną kintamąjį-tekstą.Suskaičiuoti, kiek tekste yra ‚a‘ raidžių.
 console.log('////////////////10\\\\\\\\\\\\\\\\\\\\\\\\\\');
