@@ -55,3 +55,31 @@ for (let i = 0; i < strin; i++) {
 }
 
 console.log(result, result.length);
+
+/*
+5.Sukurti masyvą, kurio ilgis 100, 
+o reikšmės –raidės M,N,O,P. Suskaičiuoti, kurios raidės buvo daugiausia.
+*/
+
+let words = ["M", "N", "O", "P"];
+let test = [];
+let mostm = 0;
+let mostn = 0;
+let mosto = 0;
+let mostp = 0;
+for (let i = 0; i < 100; i++) {
+  test.push(words[Math.floor(Math.random() * words.length)]);
+  if (test[i] === test[0]) {
+    mostm++;
+  }
+  if (test[i] === test[1]) {
+    mostn++;
+  }
+  if (test[i] === test[2]) {
+    mosto++;
+  }
+  if (test[i] === test[3]) {
+    mostp++;
+  }
+}
+console.log(test, test.length, mostm, mostn, mosto, mostp);
