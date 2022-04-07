@@ -42,3 +42,16 @@ for (let i = 0; i <= arrayMax1; i++) {
   }
 }
 console.log(mas, `Didziausia skaicius :`, largest);
+
+/*
+4.Sukurti masyvą, kurio ilgis 100, o reikšmės –raidės D, E, F, G, H. 20
+*/
+console.log("===========4============");
+let string = ["D", "E", "F", "G", "H.", "20"];
+let result = [];
+let strin = 100;
+for (let i = 0; i < strin; i++) {
+  result.push(string[Math.floor(Math.random() * string.length)]);
+}
+
+console.log(result, result.length);
